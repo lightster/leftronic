@@ -85,6 +85,16 @@ class Leftronic {
 		$this->postData($jsonData);
 	}
 
+	public function pushTable($streamName, $table) {
+		### Pushing table to a table widget
+		$parameters = array('accessKey' => $this->accessKey, 'streamName' => $streamName, 'point' => array(
+			'table' => $table));
+		# Convert to JSON
+		$jsonData = json_encode($parameters);
+		# Make request
+		$this->postData($jsonData);
+	}
+
 	public function postData($data) {
 		### Makes an HTTP POST with JSON data
 		$ch = curl_init();
