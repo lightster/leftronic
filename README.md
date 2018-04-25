@@ -1,3 +1,5 @@
+:warning: This repository is archived and exists only for historical purposes :warning:
+
 Leftronic API Documentation
 ===========================
 
